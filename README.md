@@ -16,3 +16,7 @@ Either choose an existing project or create a new project:
 ![image](https://github.com/user-attachments/assets/96e6dcd0-3fa1-4b75-998e-c286d4d3e02e)
 
 To use the free Spark Plan the GCP project should not have billing enabled.
+
+Code to deploy using terraform:
+
+https://firebase.google.com/codelabs/firebase-terraform#0

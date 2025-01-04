@@ -13,3 +13,6 @@ Either choose an existing project or create a new project:
 
 ![image](https://github.com/user-attachments/assets/9786c4c4-669a-436d-91fa-69ee04850142)
 
+![image](https://github.com/user-attachments/assets/96e6dcd0-3fa1-4b75-998e-c286d4d3e02e)
+
+To use the free Spark Plan the GCP project should not have billing enabled.

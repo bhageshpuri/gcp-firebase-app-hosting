@@ -24,5 +24,5 @@ https://firebase.google.com/codelabs/firebase-terraform#0
 While creating a new project for Firebase, label the project:
 
   labels = {
-   ** "firebase" = "enabled"**
+   "firebase" = "enabled"
   }

@@ -17,32 +17,20 @@ Either choose an existing project or create a new project:
 
 ![image](https://github.com/user-attachments/assets/5bdf17ca-e7f5-43f3-9e3c-a1b026fde642)
 
+
 To use the free Spark Plan the GCP project should not have billing enabled.
+•	Code to deploy using terraform:
+  o	https://firebase.google.com/docs/projects/terraform/get-started https://firebase.google.com/codelabs/firebase-terraform#0
+  o	While creating a new project for Firebase, label the project:
+  o	labels = { "firebase" = "enabled" }
 
-
-Code to deploy using terraform:
-
-https://firebase.google.com/docs/projects/terraform/get-started
-https://firebase.google.com/codelabs/firebase-terraform#0
-
-While creating a new project for Firebase, label the project:
-
-  labels = {
-   "firebase" = "enabled"
-  }
-
-
-Enable services/APIs:
-cloudbilling.googleapis.com
-cloudresourcemanager.googleapis.com
-serviceusage.googleapis.com
-firebase.googleapis.com
+Enable services/APIs 
+  o	cloudbilling.googleapis.com 
+  o	cloudresourcemanager.googleapis.com 
+  o	serviceusage.googleapis.com 
+  o	firebase.googleapis.com
 
 Firebase Authentication
-
-Option 1 (Recommended): Set up Firebase Authentication in the console, which doesn't require GCIP.
-•	Using this option means that you do not have to associate your new project with a Cloud Billing account.
-
-Option 2: Set up Firebase Authentication via Terraform using Google Cloud Identity Platform (GCIP) APIs.
-•	Using this option means that you have to associate your new project with a Cloud Billing account since GCIP requires the project to be on the Blaze pricing plan.
+  o	Option 1 (Recommended): Set up Firebase Authentication in the console, which doesn't require GCIP. • Using this option means that you do not have to associate your new project with a Cloud Billing account.
+  o	Option 2: Set up Firebase Authentication via Terraform using Google Cloud Identity Platform (GCIP) APIs. • Using this option means that you have to associate your new project with a Cloud Billing account since GCIP requires the project to be on the Blaze pricing plan.
 

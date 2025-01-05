@@ -27,9 +27,11 @@ https://firebase.google.com/docs/projects/terraform/get-started https://firebase
 While creating a new project for Firebase, label the project:
 labels = { "firebase" = "enabled" }
 
-Enable services/APIs: cloudbilling.googleapis.com cloudresourcemanager.googleapis.com serviceusage.googleapis.com firebase.googleapis.com
+Enable services/APIs: 
+cloudbilling.googleapis.com cloudresourcemanager.googleapis.com serviceusage.googleapis.com firebase.googleapis.com
 
 Firebase Authentication
+
 Option 1 (Recommended): Set up Firebase Authentication in the console, which doesn't require GCIP. • Using this option means that you do not have to associate your new project with a Cloud Billing account.
 Option 2: Set up Firebase Authentication via Terraform using Google Cloud Identity Platform (GCIP) APIs. • Using this option means that you have to associate your new project with a Cloud Billing account since GCIP requires the project to be on the Blaze pricing plan.
 

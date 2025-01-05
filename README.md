@@ -22,7 +22,9 @@ To use the free Spark Plan the GCP project should not have billing enabled.
 
 Code to deploy using terraform:
 
-https://firebase.google.com/docs/projects/terraform/get-started https://firebase.google.com/codelabs/firebase-terraform#0
+https://firebase.google.com/docs/projects/terraform/get-started 
+
+https://firebase.google.com/codelabs/firebase-terraform#0
 
 While creating a new project for Firebase, label the project:
 labels = { "firebase" = "enabled" }

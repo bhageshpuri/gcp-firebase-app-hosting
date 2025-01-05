@@ -20,6 +20,8 @@ Either choose an existing project or create a new project:
 
 To use the free Spark Plan the GCP project should not have billing enabled.
 
+Once you enable the free plan later to use other GCP services you can enable billing and still stay on the free plan.
+
 Code to deploy using terraform:
 
 https://firebase.google.com/docs/projects/terraform/get-started 

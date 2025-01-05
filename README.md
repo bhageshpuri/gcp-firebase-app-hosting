@@ -26,3 +26,7 @@ While creating a new project for Firebase, label the project:
   labels = {
    "firebase" = "enabled"
   }
+
+Enable services:
+serviceusage.googleapis.com
+firebase.googleapis.com

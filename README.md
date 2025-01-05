@@ -32,6 +32,9 @@ cloudbilling.googleapis.com cloudresourcemanager.googleapis.com serviceusage.goo
 
 Firebase Authentication
 
-Option 1 (Recommended): Set up Firebase Authentication in the console, which doesn't require GCIP. • Using this option means that you do not have to associate your new project with a Cloud Billing account.
-Option 2: Set up Firebase Authentication via Terraform using Google Cloud Identity Platform (GCIP) APIs. • Using this option means that you have to associate your new project with a Cloud Billing account since GCIP requires the project to be on the Blaze pricing plan.
+Option 1 (Recommended): Set up Firebase Authentication in the console, which doesn't require GCIP. 
+• Using this option means that you do not have to associate your new project with a Cloud Billing account.
+
+Option 2: Set up Firebase Authentication via Terraform using Google Cloud Identity Platform (GCIP) APIs. 
+• Using this option means that you have to associate your new project with a Cloud Billing account since GCIP requires the project to be on the Blaze pricing plan.
 

@@ -1,5 +1,5 @@
-# gcp-firebase-app-hosting
-gcp-firebase-app-hosting
+# gcp-firebase-hosting
+gcp-firebase-hosting
 
 ![image](https://github.com/user-attachments/assets/9c2b39c4-5b8d-45f0-bfc9-5cc5f3c9bc3e)
 
@@ -42,3 +42,39 @@ Option 1 (Recommended): Set up Firebase Authentication in the console, which doe
 Option 2: Set up Firebase Authentication via Terraform using Google Cloud Identity Platform (GCIP) APIs. 
 • Using this option means that you have to associate your new project with a Cloud Billing account since GCIP requires the project to be on the Blaze pricing plan.
 
+firebase init
+
+Install the Firebase CLI:
+npm install -g firebase-tools
+
+Log in to Firebase:
+firebase login --no-localhost
+
+Initialize Firebase Hosting in your project:
+firebase init hosting
+
+•	Select the project associated with your Firebase Hosting setup.
+•	Choose the folder to use as the public directory (e.g., public).
+•	Select "No" when asked to set up a single-page app (unless you're deploying a framework like React).
+
+Replace the existing index.html (if it exists) in the public folder with a simple "Hello World" HTML file:
+•	Create a file named index.html in the public folder (e.g., public/index.html).
+•	Add the following content:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Welcome to Firebase Hosting!</p>
+</body>
+</html>
+
+firebase deploy
+
+✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/YOUR_PROJECT_ID/hosting
+Hosting URL: https://YOUR_PROJECT_ID.web.app

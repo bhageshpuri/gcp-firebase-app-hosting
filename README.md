@@ -92,3 +92,12 @@ firebase deploy
 
 Project Console: https://console.firebase.google.com/project/YOUR_PROJECT_ID/hosting
 Hosting URL: https://YOUR_PROJECT_ID.web.app
+
+To re-authenticate:
+firebase login --no-localhost --reauth
+
+Change target:
+firebase target:apply hosting  fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01 fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01
+
+Redeploy:
+firebase deploy --only hosting:fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01

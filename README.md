@@ -44,20 +44,23 @@ Option 2: Set up Firebase Authentication via Terraform using Google Cloud Identi
 
 
 firebase init
+? Are you ready to proceed? (Y/n) y
+>(*) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+? What do you want to use as your public directory? public
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+? Set up automatic builds and deploys with GitHub? No
+i  public/404.html is unchanged
+? File public/index.html already exists. Overwrite? (y/N) n
 
-
-Install the Firebase CLI:
-
+Install the Firebase CLI (linux - for windows download the sdk ans skip the following):
 npm install -g firebase-tools
 
 
 Log in to Firebase:
-
 firebase login --no-localhost
 
 
 Initialize Firebase Hosting in your project:
-
 firebase init hosting
 
 
@@ -97,12 +100,12 @@ To re-authenticate:
 firebase login --no-localhost --reauth
 
 Change target:
-firebase target:apply hosting  fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01 fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01
+firebase target:apply hosting fb-01 fb-01
 
 In firebase.json, change the target:
 {
   "hosting": {
-    "target": "fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01",
+    "target": "fb-01",
     
 Redeploy:
-firebase deploy --only hosting:fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01
+firebase deploy --only hosting:fb-01

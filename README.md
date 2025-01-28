@@ -99,5 +99,10 @@ firebase login --no-localhost --reauth
 Change target:
 firebase target:apply hosting  fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01 fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01
 
+In firebase.json, change the target:
+{
+  "hosting": {
+    "target": "fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01",
+    
 Redeploy:
 firebase deploy --only hosting:fb-leopard-dashbord-gcp-wrlsce-dev-leopard-01
